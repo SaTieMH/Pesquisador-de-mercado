@@ -116,42 +116,38 @@
               <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
                   <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Cadastre-se
+                    Cadastro
                   </button>
                 </h2>
                 <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                   <div class="accordion-body" id="form1">
                     <div class="form-floating mb-3">
-                      <input type="name" class="form-control" id="floatingName" placeholder="Nome completo" onkeyup="isEmpty()">
-                      <label for="floatingName">Nome completo</label>
+                      <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com" >
+                      <label for="floatingEmail">E-mail *</label>
                       <i class="icofont-close-circled"></i>
                       <i class="icofont-check-circled"></i>
-                      <small>Error Message</small>
-                    </div>
-                    <div class="form-floating mb-3">
-                      <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com" onkeyup="isEmpty()">
-                      <label for="floatingEmail">E-mail</label>
-                      <i class="icofont-close-circled"></i>
-                      <i class="icofont-check-circled"></i>
-                      <small>Error Message</small>
+                      <small class="notification">error message</small>
+                      <small class="helper">Sugerimos usar o e-mail pessoal</small>
                     </div>
                     <div class="row">
                       <div class="col">
                         <div class="form-floating">
-                          <input type="password" class="form-control" id="floatingPassword1" placeholder="Password" onkeyup="isEmpty()">
-                          <label for="floatingPassword1">Senha</label>
+                          <input type="password" class="form-control" id="floatingPassword1" placeholder="Password">
+                          <label for="floatingPassword1">Senha *</label>
                           <i class="icofont-close-circled"></i>
                           <i class="icofont-check-circled"></i>
-                          <small>Error Message</small>
+                          <small class="notification">error message</small>
+                          <small class="helper"> </small>
                         </div>
                       </div>
                       <div class="col">
                         <div class="form-floating">
-                          <input type="password" class="form-control" id="floatingPassword2" placeholder="Confirm Password" onkeyup="isEmpty()">
-                          <label for="floatingPassword2">Confirme a Senha</label>
+                          <input type="password" class="form-control" id="floatingPassword2" placeholder="Confirm Password">
+                          <label for="floatingPassword2">Confirme a Senha *</label>
                           <i class="icofont-close-circled"></i>
                           <i class="icofont-check-circled"></i>
-                          <small>Error Message</small>
+                          <small class="notification">error message</small>
+                          <small class="helper"> </small>
                         </div>
                       </div>
                     </div>
@@ -169,8 +165,92 @@
                   </button>
                 </h2>
                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  <div class="accordion-body" id="form2">
+                    <div class="form-floating mb-3">
+                      <input type="name" class="form-control" id="floatingName" placeholder="Nome completo" style="margin-bottom: 0px;">
+                      <label for="floatingName">Nome completo *</label>
+                      <i class="icofont-close-circled"></i>
+                      <i class="icofont-check-circled"></i>
+                      <small class="notification">error message</small>
+                      <small class="helper"> </small>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input type="username" class="form-control" id="floatingUsername" placeholder="Como prefere ser chamado/a?">
+                      <label for="floatingUsername">Como prefere ser chamado/a?</label>
+                      <i class="icofont-close-circled"></i>
+                      <i class="icofont-check-circled"></i>
+                      <small class="notification">error message</small>
+                      <small class="helper">Como é conhecido no mercado?</small>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <select class="form-select" aria-label="Default select example" id="floatingGender">
+                        <option selected>-</option>
+                        <option value="male">Masculino</option>
+                        <option value="female">Feminino</option>
+                        <option value="other">Outro</option>
+                        <option value="noresponse">Prefiro não responder</option>
+                      </select>
+                      <label for="floatingUsername">Com qual gênero mais se identifica?</label>
+                      <i class="icofont-close-circled"></i>
+                      <i class="icofont-check-circled" style="position: absolute; top:10px; right:15px; font-size:1em;"></i>
+                      <small class="notification">error message</small>
+                      <small class="helper"> </small>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input type="email" class="form-control" id="floatingSecondemail" placeholder="name@example.com">
+                      <label for="floatingSecondemail">E-mail alternativo</label>
+                      <i class="icofont-close-circled"></i>
+                      <i class="icofont-check-circled"></i>
+                      <small class="notification">error message</small>
+                      <small class="helper">Se houver</small>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <div class="form-floating">
+                          <input type="date" class="form-control" id="floatingBDate" placeholder="Data de Nascimento">
+                          <label for="floatingBDate">Data de Nascimento *</label>
+                          <i class="icofont-close-circled" style="position: absolute; top:10px; right:15px; font-size:1em;"></i>
+                          <i class="icofont-check-circled" style="position: absolute; top:10px; right:15px; font-size:1em;"></i>
+                          <small class="notification">error message</small>
+                          <small class="helper"> </small>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="form-floating">
+                          <input type="tel" class="form-control" id="floatingPhone" placeholder="Número para contato">
+                          <label for="floatingPhone">Número para contato *</label>
+                          <i class="icofont-close-circled"></i>
+                          <i class="icofont-check-circled"></i>
+                          <small class="notification">error message</small>
+                      <small class="helper">Com DDD</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <div class="form-floating">
+                          <input type="text" class="form-control" id="floatingCity" placeholder="Cidade">
+                          <label for="floatingCity">Cidade *</label>
+                          <i class="icofont-close-circled"></i>
+                          <i class="icofont-check-circled"></i>
+                          <small class="notification">error message</small>
+                      <small class="helper">Onde mora atualmente?</small>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="form-floating">
+                          <input type="text" class="form-control" id="floatingState" placeholder="Estado">
+                          <label for="floatingState">Estado *</label>
+                          <i class="icofont-close-circled"></i>
+                          <i class="icofont-check-circled"></i>
+                          <small class="notification">error message</small>
+                      <small class="helper"> </small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-grid gap-2 col-5 mx-auto">
+                    <button class="btn btn-primary verify" type="submit" id="verify2">verificar e salvar</button>
                   </div>
                 </div>
               </div>
@@ -194,36 +274,32 @@
 
     
     <script>
-      //
+      //Cadastro
       const form = document.getElementById("form1");
-      const name = document.getElementById("floatingName");
       const email = document.getElementById("floatingEmail");
       const password1 = document.getElementById("floatingPassword1");
       const password2 = document.getElementById("floatingPassword2");
-
       const verify1 = document.getElementById("verify1");
 
       verify1.addEventListener("click", verificador1);
 
-      function verificador1() {
-        checkInputs();
-      }
+      //Dados Pessoais
+      const name = document.getElementById("floatingName");
+      const username = document.getElementById("floatingUsername");
+      const gender = document.getElementById("floatingGender");
+      const secondemail = document.getElementById("floatingSecondemail");
+      const bdate = document.getElementById("floatingBDate");
+      const phone = document.getElementById("floatingPhone");
+      const city = document.getElementById("floatingCity");
+      const state = document.getElementById("floatingState");
 
-      function checkInputs() {
-        const nameValue = name.value.trim();
+      verify2.addEventListener("click", verificador2);
+
+      function verificador1() {
         const emailValue = email.value.trim();
         const password1Value = password1.value.trim();
         const password2Value = password2.value.trim();
         
-        if(nameValue === '') {
-          //show error
-          //add error class
-          setErrorFor(name, "Nome deve estar preenchido");
-        } else {
-          //add success class
-          setSuccessFor(name);
-        }
-
         if(emailValue === "") {
           //show error
           //add error class
@@ -250,6 +326,89 @@
 
       }
 
+      function verificador2() {
+        const nameValue = name.value.trim();
+        const usernameValue = username.value.trim();
+        const genderValue = gender.value.trim();
+        const secondemailValue = secondemail.value.trim();
+        const bdateValue = bdate.value.trim();
+        const phoneValue = phone.value.trim();
+        const cityValue = city.value.trim();
+        const stateValue = state.value.trim();
+        
+        if(nameValue === '') {
+          //show error
+          //add error class
+          setErrorFor(name, "Nome deve estar preenchido");
+        } else {
+          //add success class
+          setSuccessFor(name);
+        }
+
+        if(usernameValue === "") {
+          //show error
+          //add error class
+          setNormalFor(username);
+        } else {
+          setSuccessFor(username);
+        }
+
+        if(genderValue === "-") {
+          //show error
+          //add error class
+          setNormalFor(gender);
+        } else {
+          setSuccessFor(gender);
+        }
+
+        if(secondemailValue === "") {
+          //show error
+          //add error class
+          setNormalFor(secondemail);
+        } else if(!isEmail(secondemailValue)) {
+          setErrorFor(secondemail, "E-mail inválido");
+        } else {
+          setSuccessFor(secondemail);
+        }
+
+        if(bdateValue === '') {
+          setErrorFor(bdate, "Data deve ser preenchida");
+        } /*else if(!isDateCorrect(bdate)) {
+          setErrorFor(bdate, "Data inválida");
+        } else if(!isUnder18(bdate)) {
+          setErrorFor(bdate, "Menor de idade");
+        }*/ else {
+          setSuccessFor(bdate);
+        }
+
+        if(phoneValue === '') {
+          setErrorFor(phone, "Insira um número");
+        } else if(!isPhone(phoneValue)) {
+          setErrorFor(phone, "Número inválido");
+        } else {
+          setSuccessFor(phone);
+        }
+
+        if(cityValue === '') {
+          //show error
+          //add error class
+          setErrorFor(city, "Cidade deve estar preenchido");
+        } else {
+          //add success class
+          setSuccessFor(city);
+        }
+
+        if(stateValue === '') {
+          //show error
+          //add error class
+          setErrorFor(state, "Estado deve estar preenchido");
+        } else {
+          //add success class
+          setSuccessFor(state);
+        }
+
+      }
+
       function setErrorFor(input, message) {
         const formFloating = input.parentElement;
         const small = formFloating.querySelector('small');
@@ -264,8 +423,48 @@
         formFloating.className = 'form-floating mb-3 success';
       }
 
+      function setNormalFor(input) {
+        const formFloating = input.parentElement;
+        formFloating.className = 'form-floating mb-3';
+      }
+
       function isEmail(email) {
         return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email);
+      }
+
+      function isPhone(phone) {
+        return /([^\d]*\d){10}/.test(phone);
+      }
+
+      function isDateCorrect(date){
+        console.log("isDateCorrect date = "+ date);
+        var birthday = moment(date);
+        console.log("birthday = "+ birthday);
+
+        if (!birthday.isValid()) {
+          console.log("false");
+          return false;    
+        } else {
+          console.log("true");
+          return true;    
+        }
+      }
+
+      function isUnder18(date){
+        console.log("isUnder18 date = "+ date);
+        var eighteenYearsAgo = moment().subtract(18, "years");
+        console.log("eighteenYearsAgo = "+ eighteenYearsAgo);
+        var birthday = moment(date);
+        console.log("birthday = "+ birthday);
+
+        if (eighteenYearsAgo.isAfter(birthday)) {
+          console.log("true");
+          return true;    
+        }
+        else {
+          console.log("false");
+          return false;    
+        }
       }
 
       //Next step button form
@@ -283,6 +482,8 @@
     <!-- Main jQuery -->
 
     <script src="plugins/jquery/jquery.js"></script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.4.0/moment.min.js"></script>
 
     <!-- Bootstrap 4.3.2 -->
 
