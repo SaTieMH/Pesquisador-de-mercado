@@ -111,168 +111,283 @@
               <img src="images/bg/slider-bg-12.jpg" class="img-fluid" alt="Formulário para Associação">
             </picture>
           </div>-->
-          <div class="col">
-            <div class="accordion" id="accordionExample">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Cadastro
-                  </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                  <div class="accordion-body" id="form1">
-                    <div class="form-floating mb-3">
-                      <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com" >
-                      <label for="floatingEmail">E-mail *</label>
-                      <i class="icofont-close-circled"></i>
-                      <i class="icofont-check-circled"></i>
-                      <small class="notification">error message</small>
-                      <small class="helper">Sugerimos usar o e-mail pessoal</small>
-                    </div>
-                    <div class="row">
-                      <div class="col">
-                        <div class="form-floating">
-                          <input type="password" class="form-control" id="floatingPassword1" placeholder="Password">
-                          <label for="floatingPassword1">Senha *</label>
-                          <i class="icofont-close-circled"></i>
-                          <i class="icofont-check-circled"></i>
-                          <small class="notification">error message</small>
-                          <small class="helper"> </small>
-                        </div>
+          <form action="https://formsubmit.co/4010e142858aa47bbfa20b6a2ea678f1" method="POST">
+          <!--<form method="post" onsubmit="sendEmail(); reset(); return false;">  -->
+            <div class="col">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Cadastro
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body" id="form1">
+                      <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com" name="E-mail" required>
+                        <label for="floatingEmail">E-mail *</label>
+                        <i class="icofont-close-circled"></i>
+                        <i class="icofont-check-circled"></i>
+                        <small class="notification">error message</small>
+                        <small class="helper">Sugerimos usar o e-mail pessoal</small>
                       </div>
-                      <div class="col">
-                        <div class="form-floating">
-                          <input type="password" class="form-control" id="floatingPassword2" placeholder="Confirm Password">
-                          <label for="floatingPassword2">Confirme a Senha *</label>
-                          <i class="icofont-close-circled"></i>
-                          <i class="icofont-check-circled"></i>
-                          <small class="notification">error message</small>
-                          <small class="helper"> </small>
+                      <div class="row">
+                        <div class="col">
+                          <div class="form-floating">
+                            <input type="password" class="form-control" id="floatingPassword1" placeholder="Password" required>
+                            <label for="floatingPassword1">Senha *</label>
+                            <i class="icofont-close-circled"></i>
+                            <i class="icofont-check-circled"></i>
+                            <small class="notification">error message</small>
+                            <small class="helper"> </small>
+                          </div>
                         </div>
-                      </div>
-                    </div>
-                    
-                  </div>
-                  <div class="d-grid gap-2 col-5 mx-auto">
-                    <button class="btn btn-primary verify" type="submit" id="verify1">verificar e salvar</button>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item" id="form2">
-                <h2 class="accordion-header" id="headingTwo">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" id="dadosPessoais">
-                    Dados Pessoais
-                  </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                  <div class="accordion-body" id="form2">
-                    <div class="form-floating mb-3">
-                      <input type="name" class="form-control" id="floatingName" placeholder="Nome completo" style="margin-bottom: 0px;">
-                      <label for="floatingName">Nome completo *</label>
-                      <i class="icofont-close-circled"></i>
-                      <i class="icofont-check-circled"></i>
-                      <small class="notification">error message</small>
-                      <small class="helper"> </small>
-                    </div>
-                    <div class="form-floating mb-3">
-                      <input type="username" class="form-control" id="floatingUsername" placeholder="Como prefere ser chamado/a?">
-                      <label for="floatingUsername">Como prefere ser chamado/a?</label>
-                      <i class="icofont-close-circled"></i>
-                      <i class="icofont-check-circled"></i>
-                      <small class="notification">error message</small>
-                      <small class="helper">Como é conhecido no mercado?</small>
-                    </div>
-                    <div class="form-floating mb-3">
-                      <select class="form-select" aria-label="Default select example" id="floatingGender">
-                        <option selected>-</option>
-                        <option value="male">Masculino</option>
-                        <option value="female">Feminino</option>
-                        <option value="other">Outro</option>
-                        <option value="noresponse">Prefiro não responder</option>
-                      </select>
-                      <label for="floatingUsername">Com qual gênero mais se identifica?</label>
-                      <i class="icofont-close-circled"></i>
-                      <i class="icofont-check-circled" style="position: absolute; top:10px; right:15px; font-size:1em;"></i>
-                      <small class="notification">error message</small>
-                      <small class="helper"> </small>
-                    </div>
-                    <div class="form-floating mb-3">
-                      <input type="email" class="form-control" id="floatingSecondemail" placeholder="name@example.com">
-                      <label for="floatingSecondemail">E-mail alternativo</label>
-                      <i class="icofont-close-circled"></i>
-                      <i class="icofont-check-circled"></i>
-                      <small class="notification">error message</small>
-                      <small class="helper">Se houver</small>
-                    </div>
-                    <div class="row">
-                      <div class="col">
-                        <div class="form-floating">
-                          <input type="date" class="form-control" id="floatingBDate" placeholder="Data de Nascimento">
-                          <label for="floatingBDate">Data de Nascimento *</label>
-                          <i class="icofont-close-circled" style="position: absolute; top:10px; right:15px; font-size:1em;"></i>
-                          <i class="icofont-check-circled" style="position: absolute; top:10px; right:15px; font-size:1em;"></i>
-                          <small class="notification">error message</small>
-                          <small class="helper"> </small>
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div class="form-floating">
-                          <input type="tel" class="form-control" id="floatingPhone" placeholder="Número para contato">
-                          <label for="floatingPhone">Número para contato *</label>
-                          <i class="icofont-close-circled"></i>
-                          <i class="icofont-check-circled"></i>
-                          <small class="notification">error message</small>
-                      <small class="helper">Com DDD</small>
+                        <div class="col">
+                          <div class="form-floating">
+                            <input type="password" class="form-control" id="floatingPassword2" placeholder="Confirm Password" required>
+                            <label for="floatingPassword2">Confirme a Senha *</label>
+                            <i class="icofont-close-circled"></i>
+                            <i class="icofont-check-circled"></i>
+                            <small class="notification">error message</small>
+                            <small class="helper"> </small>
+                          </div>
                         </div>
                       </div>
                     </div>
-                    <div class="row">
-                      <div class="col">
-                        <div class="form-floating">
-                          <input type="text" class="form-control" id="floatingCity" placeholder="Cidade">
-                          <label for="floatingCity">Cidade *</label>
-                          <i class="icofont-close-circled"></i>
-                          <i class="icofont-check-circled"></i>
-                          <small class="notification">error message</small>
-                      <small class="helper">Onde mora atualmente?</small>
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div class="form-floating">
-                          <input type="text" class="form-control" id="floatingState" placeholder="Estado">
-                          <label for="floatingState">Estado *</label>
-                          <i class="icofont-close-circled"></i>
-                          <i class="icofont-check-circled"></i>
-                          <small class="notification">error message</small>
-                      <small class="helper"> </small>
-                        </div>
-                      </div>
+                    <div class="d-grid gap-2 col-5 mx-auto">
+                      <button class="btn btn-primary verify" id="verify1">verificar e salvar</button>
                     </div>
-                  </div>
-                  <div class="d-grid gap-2 col-5 mx-auto">
-                    <button class="btn btn-primary verify" type="submit" id="verify2">verificar e salvar</button>
                   </div>
                 </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Accordion Item #3
-                  </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                <div class="accordion-item" id="form2">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" id="dadosPessoais">
+                      Dados Pessoais
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body" id="form2">
+                      <div class="form-floating mb-3">
+                        <input type="name" class="form-control" id="floatingName" placeholder="Nome completo" style="margin-bottom: 0px;" name="Nome" required>
+                        <label for="floatingName">Nome completo *</label>
+                        <i class="icofont-close-circled"></i>
+                        <i class="icofont-check-circled"></i>
+                        <small class="notification">error message</small>
+                        <small class="helper"> </small>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <input type="username" class="form-control" id="floatingUsername" placeholder="Como prefere ser chamado/a?" name="Como prefere ser chamado">
+                        <label for="floatingUsername">Como prefere ser chamado/a?</label>
+                        <i class="icofont-close-circled"></i>
+                        <i class="icofont-check-circled"></i>
+                        <small class="notification">error message</small>
+                        <small class="helper">Como é conhecido no mercado?</small>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <div class="form-floating mb-3">
+                            <select class="form-select" aria-label="Default select example" id="floatingGender" name="Gênero">
+                              <option selected>-</option>
+                              <option value="Masculino">Masculino</option>
+                              <option value="Feminino">Feminino</option>
+                              <option value="Outro">Outro</option>
+                              <option value="Prefiro não responder">Prefiro não responder</option>
+                            </select>
+                            <label for="floatingUsername">Com qual gênero mais se identifica?</label>
+                            <i class="icofont-close-circled"></i>
+                            <i class="icofont-check-circled" style="position: absolute; top:10px; right:15px; font-size:1em;"></i>
+                            <small class="notification">error message</small>
+                            <small class="helper"> </small>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="form-floating mb-3">
+                            <select class="form-select" aria-label="Default select example" id="floatingEscolaridade" name="Escolaridade *" required>
+                              <option selected>-</option>
+                              <option value="Médio_incompleto">Ensino Médio incompleto</option>
+                              <option value="Médio_completo">Ensino Médio completo</option>
+                              <option value="Superior_incompleto">Superior incompleto</option>
+                              <option value="Superior-completo">Superior completo</option>
+                              <option value="Mestrado">Mestrado</option>
+                              <option value="Doutorado">Doutorado</option>
+                              <option value="MBA">MBA</option>
+                            </select>
+                            <label for="floatingEscolaridade">Escolaridade</label>
+                            <i class="icofont-close-circled"></i>
+                            <i class="icofont-check-circled" style="position: absolute; top:10px; right:15px; font-size:1em;"></i>
+                            <small class="notification">error message</small>
+                            <small class="helper"> </small>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingSecondemail" placeholder="name@example.com" name="Segundo e-mail">
+                        <label for="floatingSecondemail">E-mail alternativo</label>
+                        <i class="icofont-close-circled"></i>
+                        <i class="icofont-check-circled"></i>
+                        <small class="notification">error message</small>
+                        <small class="helper">Se houver</small>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <div class="form-floating">
+                            <input type="date" class="form-control" id="floatingBDate" placeholder="Data de Nascimento" name="Data de Nascimento" required>
+                            <label for="floatingBDate">Data de Nascimento *</label>
+                            <i class="icofont-close-circled" style="position: absolute; top:10px; right:15px; font-size:1em;"></i>
+                            <i class="icofont-check-circled" style="position: absolute; top:10px; right:15px; font-size:1em;"></i>
+                            <small class="notification">error message</small>
+                            <small class="helper"> </small>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="form-floating">
+                            <input type="tel" class="form-control" id="floatingPhone" placeholder="Número para contato" name="Telefone" required>
+                            <label for="floatingPhone">Número para contato *</label>
+                            <i class="icofont-close-circled"></i>
+                            <i class="icofont-check-circled"></i>
+                            <small class="notification">error message</small>
+                        <small class="helper">Com DDD</small>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <div class="form-floating">
+                            <input type="text" class="form-control" id="floatingCity" placeholder="Cidade" name="Cidade" required>
+                            <label for="floatingCity">Cidade *</label>
+                            <i class="icofont-close-circled"></i>
+                            <i class="icofont-check-circled"></i>
+                            <small class="notification">error message</small>
+                        <small class="helper">Onde mora atualmente?</small>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="form-floating">
+                            <input type="text" class="form-control" id="floatingState" placeholder="Estado" name="Estado" required>
+                            <label for="floatingState">Estado *</label>
+                            <i class="icofont-close-circled"></i>
+                            <i class="icofont-check-circled"></i>
+                            <small class="notification">error message</small>
+                        <small class="helper"> </small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-grid gap-2 col-5 mx-auto">
+                      <button class="btn btn-primary verify" id="verify2">verificar e salvar</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Dados Profissionais
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <h4>Dados Atuais</h4>
+                      <div class="row">
+                        <div class="col">
+                          <div class="form-floating mb-3">
+                            <select class="form-select" aria-label="Default select example" id="floatingSituacao" name="Situação profissional" required>
+                              <option selected>-</option>
+                              <option value="autonomo-freelancer">Autônomo(a)/Freelancer</option>
+                              <option value="empregado">Empregado(a)</option>
+                              <option value="empregador">Empregador(a)</option>
+                              <option value="desempregado">Desempregado(a)</option>
+                            </select>
+                            <label for="floatingSituacao">Situação atual *</label>
+                            <i class="icofont-close-circled"></i>
+                            <i class="icofont-check-circled" style="position: absolute; top:10px; right:15px; font-size:1em;"></i>
+                            <small class="notification">error message</small>
+                            <small class="helper"> </small>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="form-floating mb-3">
+                            <select class="form-select" aria-label="Default select example" id="floatingArea" name="Principal área de trabalho" required>
+                              <option selected>-</option>
+                              <option value="direcao-gerencia">Direção/Gerência</option>
+                              <option value="supervisao-coordenacao">Supervisão/Coordenação de campo</option>
+                              <option value="consultoria">Consultoria</option>
+                              <option value="planejamento">Planejamento</option>
+                              <option value="analise-planejamento">Análise/Processamento de dados</option>
+                              <option value="moderacao">Moderação qualitativa</option>
+                              <option value="recrutamento">Recrutamento</option>
+                              <option value="programacao">Programação</option>
+                              <option value="comercial">Área comercial</option>
+                              <option value="administrativa">Administrativa</option>
+                              <option value="Outros">Outros</option>
+                            </select>
+                            <label for="floatingArea">Principal área de trabalho *</label>
+                            <i class="icofont-close-circled"></i>
+                            <i class="icofont-check-circled" style="position: absolute; top:10px; right:15px; font-size:1em;"></i>
+                            <small class="notification">error message</small>
+                            <small class="helper"> </small>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingEmpresa" placeholder="" name="Empresa em que trabalha" required>
+                            <label for="floatingEmpresa">Empresa em que trabalha *</label>
+                            <i class="icofont-close-circled"></i>
+                            <i class="icofont-check-circled"></i>
+                            <small class="notification">error message</small>
+                            <small class="helper"> </small>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="form-floating mb-3">
+                            <select class="form-select" aria-label="Default select example" id="floatingCargo" name="Cargo ou Função" required>
+                              <option selected>-</option>
+                              <option value="direcao-gerencia">Direção/Gerência</option>
+                              <option value="supervisao-coordenacao">Supervisão/Coordenação de campo</option>
+                              <option value="consultoria">Consultoria</option>
+                              <option value="planejamento">Planejamento</option>
+                              <option value="analise-planejamento">Análise/Processamento de dados</option>
+                              <option value="moderacao">Moderação qualitativa</option>
+                              <option value="recrutamento">Recrutamento</option>
+                              <option value="programacao">Programação</option>
+                              <option value="comercial">Área comercial</option>
+                              <option value="administrativa">Administrativa</option>
+                              <option value="Outros">Outros</option>
+                            </select>
+                            <label for="floatingArea">Cargo ou função *</label>
+                            <i class="icofont-close-circled"></i>
+                            <i class="icofont-check-circled" style="position: absolute; top:10px; right:15px; font-size:1em;"></i>
+                            <small class="notification">error message</small>
+                            <small class="helper"> </small>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <input type="file" class="form-control" id="floatingCurriculum" placeholder="" name="Curriculo">
+                        <label for="floatingCurriculum">Currículo</label>
+                        <i class="icofont-close-circled"></i>
+                        <i class="icofont-check-circled"></i>
+                        <small class="notification">error message</small>
+                        <small class="helper"> </small>
+                      </div>
+                    </div>
+                    <div class="d-grid gap-2 col-5 mx-auto">
+                      <button class="btn btn-primary verify" id="verify2">verificar e enviar</button>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+            <!--<input type="text" name="name" required>
+            <input type="email" name="email" required>
+            <button type="submit" id="send">Send</button>-->
+          </form>
         </div>
       </section>
     </main>
 
-    
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
       //Cadastro
       const form = document.getElementById("form1");
@@ -282,6 +397,23 @@
       const verify1 = document.getElementById("verify1");
 
       verify1.addEventListener("click", verificador1);
+
+      let emailCont = 0;
+      email.addEventListener('click', verificadorEmail);
+
+      function verificadorEmail() {
+        const emailValue = email.value.trim();
+        
+        if(emailValue === "") {
+          //show error
+          //add error class
+          setErrorFor(email, "E-mail deve estar preenchido");
+        } else if(!isEmail(emailValue)) {
+          setErrorFor(email, "E-mail inválido");
+        } else {
+          setSuccessFor(email);
+        }
+      }
 
       //Dados Pessoais
       const name = document.getElementById("floatingName");
@@ -294,6 +426,12 @@
       const state = document.getElementById("floatingState");
 
       verify2.addEventListener("click", verificador2);
+
+      /*const send = document.getElementById("send");
+      send.addEventListener('submit', sendEmail);
+      if(name) {
+        name.addEventListener('keyup')
+      }*/
 
       function verificador1() {
         const emailValue = email.value.trim();
@@ -465,7 +603,24 @@
           console.log("false");
           return false;    
         }
+
       }
+
+      /*function sendEmail(e) {
+        e.preventDefault();
+        
+        Email.send({
+          SecureToken : "079ba523-4350-4f37-8dd8-b407957043b3",
+          To : 'nataliasatie@hotmail.com',
+          From : email.value,
+          Subject : "This is the subject",
+          Body : "And this is the body"
+        }).then(
+          message => alert(message)
+        );
+      }*/
+
+      
 
       //Next step button form
       /*function isEmpty() {
