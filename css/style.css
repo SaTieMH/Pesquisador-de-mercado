@@ -3043,6 +3043,10 @@ a:focus {
   border-color: #2ecc71;
  }
 
+ .form-floating.error select {
+  border-color: #e74c3c;
+ }
+
 .form-floating.success i.icofont-check-circled {
   color: #2ecc71;
   visibility: visible;
