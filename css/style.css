@@ -138,7 +138,7 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 
   box-shadow: none;
 
-  border-radius: 0;
+  border-radius: 5px;
 
 }
 
@@ -3059,76 +3059,6 @@ background: linear-gradient(90deg, rgba(227,234,255,1) 0%, rgba(244,249,252,1) 1
 
   opacity: 1;
 
-}
-
-.form-floating input {
-  border: 2px solid #f0f0f0;
-  border-radius: 10px;
-  margin-bottom: 30px;
- }
-
- .form-floating select {
-  border: 2px solid #f0f0f0;
-  border-radius: 10px;
-  margin-bottom: 30px;
- }
-
- .form-floating i {
-  position:absolute;
-  top: 18px;
-  right: 10px;
-  font-size: 1.5em;
-  visibility: hidden;
- }
-
- .form-floating small.helper {
-  color: rgb(184, 184, 184);
-  position: absolute;
-  bottom: -20px;
-  left: 10px;
- }
- 
- .form-floating small.notification {
-  color: rgb(184, 184, 184);
-  visibility: hidden;
-  position: absolute;
-  bottom: -2px;
-  right: 20px;
- }
-
- .form-floating.success input {
-  border-color: #2ecc71;
- }
-
-.form-floating.error input {
-  border-color: #e74c3c;
- }
-
- .form-floating.success select {
-  border-color: #2ecc71;
- }
-
- .form-floating.error select {
-  border-color: #e74c3c;
- }
-
-.form-floating.success i.icofont-check-circled {
-  color: #2ecc71;
-  visibility: visible;
-}
-
-.form-floating.error i.icofont-close-circled {
-  color: #e74c3c;
-  visibility: visible;
-}
-
-.form-floating.error small.notification {
-  color: #e74c3c;
-  visibility: visible;
-}
-
-.btn.verify {
-  margin: -20px 0px 20px 0px;
 }
 
 /*# sourceMappingURL=maps/style.css.map */
