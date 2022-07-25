@@ -41,7 +41,10 @@
 
     <link rel="stylesheet" href="css/style.css">
 
-    <link rel="stylesheet" href="css/style_animate.css"> <!-- Resource style -->
+    <link rel="stylesheet" href="css/style_animate.css">
+    
+    <link rel="stylesheet" href="css/style_form-associe.css">
+    <!-- Resource style -->
 
 
 
@@ -87,7 +90,7 @@
           </div>
       </nav>
     </header>
-    <section class="page-title bg-1">
+    <section class="page-title bg-5">
         <div class="overlay"></div>
 
         <div class="container">
@@ -100,187 +103,101 @@
             </div>
         </div>
     </section>
-
-    <main>
+     <main>
       <section class="container">
-        <h1>Formulário de Associação</h1>
+        <h1 style="margin: 50px 0px;">Venha fazer parte da ASBPM</h1>
         <div class="row">
-          <div class="col-4">
-            <picture>
-              <source srcset="images/bg/slider-bg-12.jpg" type="image/svg+xml">
-              <img src="images/bg/slider-bg-12.jpg" class="img-fluid" alt="Formulário para Associação">
-            </picture>
-          </div>
-          <div class="col-8">
-            <div class="accordion" id="accordionExample">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Cadastre-se
-                  </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                  <div class="accordion-body" id="form1">
-                    <div class="form-floating mb-3">
-                      <input type="name" class="form-control" id="floatingName" placeholder="Nome completo" onkeyup="isEmpty()">
-                      <label for="floatingName">Nome completo</label>
-                      <i class="icofont-close-circled"></i>
-                      <i class="icofont-check-circled"></i>
-                      <small>Error Message</small>
-                    </div>
-                    <div class="form-floating mb-3">
-                      <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com" onkeyup="isEmpty()">
-                      <label for="floatingEmail">E-mail</label>
-                      <i class="icofont-close-circled"></i>
-                      <i class="icofont-check-circled"></i>
-                      <small>Error Message</small>
-                    </div>
-                    <div class="row">
-                      <div class="col">
-                        <div class="form-floating">
-                          <input type="password" class="form-control" id="floatingPassword1" placeholder="Password" onkeyup="isEmpty()">
-                          <label for="floatingPassword1">Senha</label>
-                          <i class="icofont-close-circled"></i>
-                          <i class="icofont-check-circled"></i>
-                          <small>Error Message</small>
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div class="form-floating">
-                          <input type="password" class="form-control" id="floatingPassword2" placeholder="Confirm Password" onkeyup="isEmpty()">
-                          <label for="floatingPassword2">Confirme a Senha</label>
-                          <i class="icofont-close-circled"></i>
-                          <i class="icofont-check-circled"></i>
-                          <small>Error Message</small>
-                        </div>
-                      </div>
-                    </div>
-                    
-                  </div>
-                  <button class="btn btn-primary verify" type="submit" id="verify1">Verificar e continuar</button>
-                </div>
-              </div>
-              <div class="accordion-item" id="form2">
-                <h2 class="accordion-header" id="headingTwo">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" id="dadosPessoais">
-                    Dados Pessoais
-                  </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Accordion Item #3
-                  </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          
         </div>
       </section>
     </main>
 
-    
-    <script>
-      //
-      const form = document.getElementById("form1");
-      const name = document.getElementById("floatingName");
-      const email = document.getElementById("floatingEmail");
-      const password1 = document.getElementById("floatingPassword1");
-      const password2 = document.getElementById("floatingPassword2");
 
-      const verify1 = document.getElementById("verify1");
 
-      verify1.addEventListener("click", verificador1);
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
 
-      function verificador1() {
-        checkInputs();
-      }
 
-      function checkInputs() {
-        const nameValue = name.value.trim();
-        const emailValue = email.value.trim();
-        const password1Value = password1.value.trim();
-        const password2Value = password2.value.trim();
-        
-        if(nameValue === '') {
-          //show error
-          //add error class
-          setErrorFor(name, "Nome deve estar preenchido");
-        } else {
-          //add success class
-          setSuccessFor(name);
-        }
-
-        if(emailValue === "") {
-          //show error
-          //add error class
-          setErrorFor(email, "E-mail deve estar preenchido");
-        } else if(!isEmail(emailValue)) {
-          setErrorFor(email, "E-mail inválido");
-        } else {
-          setSuccessFor(email);
-        }
-
-        if(password1Value === '') {
-          setErrorFor(password1, "Senha deve ser preenchida");
-        } else {
-          setSuccessFor(password1);
-        }
-
-        if(password2Value === '') {
-          setErrorFor(password2, "Confirme a senha");
-        } else if( password1Value !== password2Value) {
-          setErrorFor(password2, "A senha não bate");
-        } else {
-          setSuccessFor(password2);
-        }
-
-      }
-
-      function setErrorFor(input, message) {
-        const formFloating = input.parentElement;
-        const small = formFloating.querySelector('small');
-        //add error message inside small
-        small.innerText = message;
-        //add error class
-        formFloating.className = 'form-floating mb-3 error';
-      }
-
-      function setSuccessFor(input) {
-        const formFloating = input.parentElement;
-        formFloating.className = 'form-floating mb-3 success';
-      }
-
-      function isEmail(email) {
-        return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email);
-      }
-
-      //Next step button form
-      /*function isEmpty() {
-        let name = document.getElementById("floatingName").value;
-        let email = document.getElementById("floatingEmail").value;
-        let password = document.getElementById("floatingPassword").value;
-
-        if(name != "" && email != "" && password !="") {
-          document.getElementById("dadosPessoais").removeAttribute("disabled");
-        }
-      }*/
-    </script>
-
+	 <!-- footer Start -->
+    <footer class="footer section gray-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mr-auto col-sm-6">
+                    <div class="widget mb-5 mb-lg-0">
+                        <div class="logo mb-4"> <img src="images/logo2.png" alt="" class="img-fluid"> </div>
+                        <p> Associação Brasileira de Pesquisadores de Mercado, Opinião e Mídia - ASBPM</p>
+                        <ul class="list-inline footer-socials mt-4">
+                            <li class="list-inline-item"><a href="http://www.facebook.com/asbpm"><i class="icofont-facebook"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.instagram.com/asbpmbr/"><i class="icofont-instagram"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.linkedin.com/company/asbpmbr/"><i class="icofont-linkedin"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.youtube.com/c/ASBPM"><i class="icofont-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                    <div class="widget mb-5 mb-lg-0">
+                        <h4 class="text-capitalize mb-3">Páginas</h4>
+                        <div class="divider mb-4"></div>
+                        <ul class="list-unstyled footer-menu lh-35">
+                            <li><a href="#">Nossa história </a></li>
+                            <li><a href="#">Institucional</a></li>
+                            <li><a href="#">Diretoria</a></li>
+                            <li><a href="#">Cursos e Eventos</a></li>
+                            <li><a href="#">Links úteis</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                    <div class="widget mb-5 mb-lg-0">
+                        <h4 class="text-capitalize mb-3">&nbsp;</h4>
+                        <div class="divider mb-4"></div>
+                        <ul class="list-unstyled footer-menu lh-35">
+                            <li><a href="#">&nbsp;</a></li>
+                            <li><a href="#">&nbsp;</a></li>
+                            <li><a href="#">&nbsp; </a></li>
+                            <li><a href="#">&nbsp;</a></li>
+                            <li><a href="#">&nbsp;</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="widget widget-contact mb-5 mb-lg-0">
+                        <h4 class="text-capitalize mb-3">&nbsp;</h4>
+                        <div class="divider mb-4"></div>
+                        <div class="footer-contact-block mb-4">
+                            <div class="icon d-flex align-items-center"> <i class="icofont-email mr-3"></i> <span class="h6 mb-0">E-mail</span> </div>
+                            <h4 class="mt-2"><a href="tel:+23-345-67890">secretaria@asbpm.org.br</a></h4>
+                        </div>
+                        <div class="footer-contact-block">
+                            <div class="icon d-flex align-items-center"> <i class="icofont-support mr-3"></i> <span class="h6 mb-0">Telefone</span> </div>
+                            <h4 class="mt-2"><a href="tel:011-9958-9958">011-9958-9958</a></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-btm py-4 mt-5">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-lg-6">
+                        <div class="copyright"> &copy; Copyright Reserved to <span class="text-color">ASBPM</span> </div>
+                    </div>
+                    <div class="col-lg-6"> </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4"> <a class="backtop js-scroll-trigger" href="#top"> <i class="icofont-long-arrow-up"></i> </a> </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+	
     <!-- Main jQuery -->
 
     <script src="plugins/jquery/jquery.js"></script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.4.0/moment.min.js"></script>
 
     <!-- Bootstrap 4.3.2 -->
 
@@ -324,5 +241,3 @@
   </body>
 
 </html>
-
-   
