@@ -35,61 +35,96 @@
     width: 100%;
   }
 
+p {
+  font-family: "Exo", sans-serif;
+
+  font-weight: 400;
+
+  color: #223557;
+}
+
+strong {
+  font-weight: 800;
+  color: #424242;
+}
+
+a {
+  font-weight: 600;
+  color: blue;
+  text-decoration: underline;
+}
+
 h4 {
     font-size: 1em;
     margin-left: 10px;
 }
 
+.requisitos-associacao i {
+  position:absolute;
+  top: 18px;
+  right: 10px;
+  font-size: 1.5em;
+  color: #2ECC71;
+}
+
+.tipos-associacao i {
+  position:absolute;
+  top: 18px;
+  right: 10px;
+  font-size: 1.5em;
+  color: #ED3237;
+}
+
 .form-floating input {
-    border: 2px solid #f0f0f0;
-    border-radius: 10px;
-    margin-bottom: 30px;
-   }
+  border: 2px solid #f0f0f0;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  }
+
+  .form-floating select {
+  border: 2px solid #f0f0f0;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  }
+
+  .form-floating i {
+  position:absolute;
+  top: 18px;
+  right: 10px;
+  font-size: 1.5em;
+  visibility: hidden;
+  }
+
+  .form-floating small.helper {
+  color: rgb(184, 184, 184);
+  position: absolute;
+  bottom: -20px;
+  left: 10px;
+  }
   
-   .form-floating select {
-    border: 2px solid #f0f0f0;
-    border-radius: 10px;
-    margin-bottom: 30px;
-   }
-  
-   .form-floating i {
-    position:absolute;
-    top: 18px;
-    right: 10px;
-    font-size: 1.5em;
-    visibility: hidden;
-   }
-  
-   .form-floating small.helper {
-    color: rgb(184, 184, 184);
-    position: absolute;
-    bottom: -20px;
-    left: 10px;
-   }
-   
-   .form-floating small.notification {
-    color: rgb(184, 184, 184);
-    visibility: hidden;
-    position: absolute;
-    bottom: -2px;
-    right: 20px;
-   }
-  
-   .form-floating.success input {
-    border-color: #2ecc71;
-   }
-  
-  .form-floating.error input {
-    border-color: #e74c3c;
-   }
-  
-   .form-floating.success select {
-    border-color: #2ecc71;
-   }
-  
-   .form-floating.error select {
-    border-color: #e74c3c;
-   }
+  .form-floating small.notification {
+  color: rgb(184, 184, 184);
+  visibility: hidden;
+  position: absolute;
+  bottom: -2px;
+  right: 20px;
+  }
+
+  .form-floating.success input {
+  border-color: #2ecc71;
+  }
+
+.form-floating.error input {
+  border-color: #e74c3c;
+  }
+
+  .form-floating.success select {
+  border-color: #2ecc71;
+  }
+
+  .form-floating.error select {
+  border-color: #e74c3c;
+  }
   
   .form-floating.success i.icofont-check-circled {
     color: #2ecc71;

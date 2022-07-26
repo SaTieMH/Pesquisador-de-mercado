@@ -14,6 +14,8 @@
         $('.backtop').removeClass('reveal');
     }
 });
+
+
  
 	$('.portfolio-single-slider').slick({
 		infinite: true,
